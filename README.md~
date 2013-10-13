@@ -13,7 +13,4 @@ $db['default']['username'] = 'root';
 $db['default']['password'] = 'root';
 $db['default']['database'] = 'codeigniter';
 
-NOTE: I personally find CodeIgniter documentation lacking in precision, as well as user friendliness. The bare bones approach for maximum performance is commendable, but makes concise documentation even more valuable and required for wider framework adoption.
-
-NOTE 2: The design decision not to use templates is purely for performance, but expect people to cringe.
 
