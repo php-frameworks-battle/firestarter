@@ -4,8 +4,22 @@ firestarter
 ## Installation
 
 1. Download the latest version. Comes in .zip archive format
-1. Unzip the package into target location
-1. Edit application/config/config.php and set base URL:
+2. Unzip the package into target location
+3. Add entry to hosts for firestarter.local
+4. Add to appropriate /etc/apache2/sites-available/ file below entry:
+
+     <VirtualHost *:80>
+         ServerName firestarter.local
+         DocumentRoot /path/to/project/firestarter
+         <Directory />
+         AllowOverride All
+         Order allow,deny
+         Allow from All
+         </Directory>
+     </VirtualHost>
+
+
+5. Edit application/config/config.php and set base URL:
 
  $config['base_url']	= 'firestarter.local';
 
